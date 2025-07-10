@@ -1,0 +1,20 @@
+ :root {
+  @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+  /* App.css or index.css */
+  @import "leaflet/dist/leaflet.css";
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+  }
+  .app{
+    min-height: 100vh;
+    display: grid;
+    background: #8BC3E6;
+  }
+}
