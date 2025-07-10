@@ -48,7 +48,7 @@ const LocationPicker = ({ setCustomCoord, inputRef, search }) => {
 const Weather = () => {
   const inputRef = useRef();
   const [weatherData, setWeatherData] = useState(false);
-  const [customCoord, setCustomCoord] = useState(null); // for pin drop
+  const [customCoord, setCustomCoord] = useState(null); 
 
   const allIcons = {
     "01d": clear_icon,
@@ -104,7 +104,7 @@ const Weather = () => {
         lat: data.coord.lat,
         lon: data.coord.lon
       });
-      // move map to searched location
+      
 
     } catch (error) {
       setWeatherData(false);
@@ -113,7 +113,7 @@ const Weather = () => {
   }
 
   useEffect(() => {
-    search("London");
+    search("Delhi");
   }, []);
 
   return (
